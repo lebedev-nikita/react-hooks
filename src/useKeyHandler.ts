@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 
+/**
+  @example
+  useKeyHandler("Enter", { ctrlKey: true }, [someValue], () => alert(someValue));
+*/
+
 export function useKeyHandler(
   key: string,
   opt: { ctrlKey?: boolean; altKey?: boolean; shiftKey?: boolean },
